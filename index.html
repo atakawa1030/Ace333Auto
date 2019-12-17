@@ -223,39 +223,5 @@
                 integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
                 crossorigin="anonymous">
               </script>
-              <script type="text/javascript">
-                var slideIndex = 1;
-                showDivs(slideIndex);
-
-                function plusDivs(n) {
-                  showDivs(slideIndex += n);
-                }
-
-                function currentDiv(n) {
-                  showDivs(slideIndex = n);
-                }
-
-                function showDivs(n) {
-                  var i;
-                  var x = document.getElementsByClassName("mySlides");
-                  var dots = document.getElementsByClassName("demo");
-                  if (n > x.length) {
-                    slideIndex = 1
-                  }
-                  if (n < 1) {
-                    slideIndex = x.length
-                  }
-                  for (i = 0; i < x.length; i++) {
-                    x[i].style.display = "none ", "animation: fading 10s infinite";
-                  }
-                  for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" w3-white", "");
-                  }
-                  x[slideIndex - 1].style.display = "block";
-                  dots[slideIndex - 1].className += " w3-white";
-                }
-
-              </script>
 </body>
-
 </html>
